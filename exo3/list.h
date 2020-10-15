@@ -47,8 +47,6 @@ int list_search(const List* list, const char* key);
 
 void list_sort(List* list);
 
-void list_show(const List* list);
-
 void list_menu(List* list);
 
 #endif
