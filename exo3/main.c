@@ -3,7 +3,7 @@
 
 int main(int argc, char* argv[])
 {
-  /* Add random words in the list */
+  /* we add random words in the list */
   List* new = new_list();
   list_add_tail(list, "bonjour", "hello");
   list_add_tail(list, "salut", "hi");
@@ -20,14 +20,13 @@ int main(int argc, char* argv[])
   list_add(list, 12, "chien", "dog");
   list_add_tail(list, "chat", "cat");
 
-  /* Make a copy and delete the orignal */
   List* copy = list_copy(list);
   delete_list(list);
 
-  /* Let the user test the list */
+  /* we let the user tests the list */
   list_menu(copy);
 
-  /* Free memory */
+  /* we free the memory */
   delete_list(copy);
 
   return 0;
