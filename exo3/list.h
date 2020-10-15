@@ -1,7 +1,7 @@
 #ifndef LIST_H_INCLUDED
 #define LIST_H_INCLUDED
 
-/* Structs */
+
 struct Node_ {
   char* key;
   char* value;
@@ -16,7 +16,7 @@ struct List_ {
 typedef struct Node_ Node; /* to avoid writing "struct" everywhere */
 typedef struct List_ List;
 
-/* Functions */
+
 char* copy_string(const char* string);
 
 Node* new_node(const char* key, const char* value);
