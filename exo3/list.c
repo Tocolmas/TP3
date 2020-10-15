@@ -195,7 +195,7 @@ void list_sort(List* list)
   list->first = head;
 }
 
-int inverse ()
+int list_inverse ()
 
 {
     int taille;
@@ -295,7 +295,7 @@ void list_menu(List* list)
         break;
 
       case 10 :
-        inverse();
+        list_inverse();
         break;
 
       default:
